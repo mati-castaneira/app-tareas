@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--MetaGoogle-->
+    <meta name="description" content="Lista de Compras" />
+    <meta name="keywords" content="compras, listado" />
+    <meta name="author" content="Matías Castañeira" />
+    <meta name="copyright" content="Matías Castañeira" />
+    <meta name="robots" content="index follow" />
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/svg" />
+    <!--Facebook-->
+    <meta property="og:title" content="Lista de Compras />
+    <meta property="og:description" content="Lista de Compras" />
+    <meta property="og:type" content="Lista de Compras" />
+    <meta property:="og:image"
+    content="https://reto005summer.web.app/img/favicon.png"> <meta
+    property:="og:url" content="https://reto005summer.web.app/">
+    <!--Twitter-->
+    <meta property="Twitter:title" content="Lista de Compras" />
+    <meta property="Twitter:description" content="Lista de Compras" />
+    <meta
+      property="Twitter:image"
+      content="https://reto005summer.web.app/img/favicon.png"
+    />
+    <meta property="Twitter:url" content="https://reto005summer.web.app/" />
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="espacio" href="#"
+        ><img src="/img/favicon.png" alt=""
+      /></a>
+      <h1 class="espacio">Listado de Tareas</h1>
+    </header>
+    <section class="layout">
+      <div class="noHayNada" id="noHay">
+        <h3>
+          No Hay nada en la lista! 
+        </h3>
+        <img class="sadIcon" src="/img/sad.svg" alt="">
+      </div>
+
+      <div class="agregarTask" id="AddPopUp">
+        <div class="containerAddTask">
+          <h4 id="advertencia">Falta agregar Título y/o Categría</h4>
+          <input id="titleTask" required type="text" placeholder="Nombre de la tarea">
+          <select id="categoryTask" required name="Categoría de Tarea">
+            <option value="electro">Electrónica</option> 
+            <option value="limpieza">Limpieza</option> 
+            <option value="alimento">Alimento</option>
+            <option value="bebida">Bebida</option>
+            </select>
+            <textarea name="" id="descriptionTask" cols="30" rows="10"
+            placeholder="Descripción"></textarea>
+            <button id="btnAddTask" type="sumbit, reset">Añadir</button>
+        </div>
+      </div>
+
+      <ul id="listado">
+      </ul>
+
+      <div id="descripciontarea">
+        <div id="containerdescripción">
+        </div>
+      </div>
+    </section>
+    <!--Botón add-->
+    <div class="divAdd">
+      <button id="btnAdd" type="submit">+</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
